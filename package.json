@@ -10,7 +10,8 @@
   "author": "Scott Bradley",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.1",
+    "node": "^17.0.1"
   },
   "repository": {
     "type": "git",
@@ -22,4 +23,3 @@
   },
   "homepage": "https://github.com/ScalexanderB/Your-Note-Taker#readme"
 }
-
