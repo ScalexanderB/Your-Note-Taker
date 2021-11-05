@@ -1,14 +1,25 @@
 {
-  "name": "note-taker",
+  "name": "your-note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Application used for writing, saving and possibly deleting notes. Express used as the main back-end to save and get JSON file.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Scott Bradley",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScalexanderB/Your-Note-Taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ScalexanderB/Your-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/ScalexanderB/Your-Note-Taker#readme"
 }
+
