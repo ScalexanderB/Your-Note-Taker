@@ -1,5 +1,25 @@
 [
     {
+        "title":"Here's your first note.",
+        "text":"Looks pretty good."
+    },
+    {
+        "title":"Cat names.",
+        "text":"Phoenix, Fluffy, Scratches"
+    },
+    {
+        "title":"Things to do tomorrow.",
+        "text":"Take more notes."
+    },
+    {
+        "title":"What should I eat for dinner?",
+        "text":"Pizza or Pasta."
+    },
+    {
+        "title":"",
+        "text":"Test text"
+    },
+    {
         "title":"Test Title",
         "text":"Test text"
     }
