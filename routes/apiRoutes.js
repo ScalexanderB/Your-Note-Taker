@@ -46,4 +46,29 @@ apiRouter.post("/api/notes", (req, res) => {
     });
 });
 
+//Delete function
+// To delete a note from the db.json file, the function needs to read all the notes from the file, removing the note with the correct 'id', then rewriting the notes to the file.
+
+apiRouter.delete("/api/notes/:id", (req, res) => {
+    //filters the id, replacing the array without the id
+    fs.readFile('./db/db.json', 'utf8', (error, file) => {
+        if (error) throw error;
+
+        let deletedNoteId = req.params.id;
+
+        const parsedFile = JSON.parse(file);
+
+        const newParsedFile = parsedFile.filter(elem => elem.id != deletedNoteId);
+
+        const newStringifiedFile = JSON.stringify(newParsedFile);
+
+        fs.writeFile('./db/db.json', newStringifiedFile, 'utf8', (err) => {
+            if (err) throw err;
+            console.log("Your note was deleted.");
+        });
+
+        return res.send(JSON.parse(newStringifiedFile));
+    });
+});
+
 module.exports = apiRouter;
