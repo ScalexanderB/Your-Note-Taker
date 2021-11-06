@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 // Port for listener to call
-let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 4000;
 
 // Routers
 const apiRouter = require("./routes/apiRoutes");
